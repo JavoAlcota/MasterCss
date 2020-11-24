@@ -1,0 +1,40 @@
+ul li:first-child{  /*al primer elemento de la lista se le aplica el css*/
+    color: red;
+}
+
+ul li{
+    font-size: 20px;
+}
+
+ul li:nth-child(2){ /*escoges un elemento en especifico*/
+    color: blue;
+}
+
+ul li:last-child{ /*ultimo elemento de la lista*/
+    color: green;
+}
+
+#mi-enlace{
+    color: lightsalmon;
+    font-size: 30px;
+}
+
+#mi-enlace:link{ /*cuando no se ha visitado el enlace*/
+    color: red;
+}
+
+#mi-enlace:visited{ /*enlace visitado*/
+    color: black;
+}
+
+#mi-enlace:hover{
+    color: blue;
+}
+
+#mi-enlace:active{ /*mientras se le hace click*/
+    color: green;
+}
+
+input[type=text]:focus{ /*cuando se "focusea" al elemento*/
+    border: 4px dashed red;
+}

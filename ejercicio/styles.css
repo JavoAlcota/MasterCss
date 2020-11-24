@@ -1,0 +1,83 @@
+#contenedorPrincipal{
+    width: 1200px;
+    margin: 0px auto; /*centrar un elemento*/
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+#header{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(25, 173, 75, 0.74);
+    text-align: center;
+    line-height: 90px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#menu{
+    background-color: #eee;
+}
+
+#menu ul li{
+    display: inline-block; /*poner elementos uno al lado de otro*/
+    /*Tambien puedes usar un display: block; y usar la propiedad float:left;
+      Esto requerirá que limpies el float, usando un div con la clase clearfix con un float: none; y un clear: both;.
+    */
+    padding: 15px;
+    border-right: 1px solid black;
+}
+
+#menu ul li:hover{
+    background-color:  rgba(25, 173, 75, 0.74);
+}
+
+#menu ul li:hover a{
+    color: black;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+#contenido{
+    width: 69%;
+    border: 1px solid black;
+    float: left;
+}
+
+#lateral{
+    width: 30%;
+    border: 1px black solid;
+    float: left;
+}
+
+#contenido .caja{
+    width: 40%;
+    height: 250px;
+    background-color: red;
+    border: 1px solid blue;
+    color: white;
+    float: left;
+    margin: 20px;
+    margin-left: 45px;
+}
+
+#contenido h1{
+    text-align: center;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+#footer{
+    width: 100%;
+    background-color: #eee;
+    text-align: center;
+    color: #444;
+}

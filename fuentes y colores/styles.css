@@ -1,0 +1,47 @@
+@font-face{ /*fuente descargada*/
+    font-family: weaBacan; /*darle un nombre*/
+    src: url(font/Quicksand-VariableFont_wght.ttf); /*ubicar la fuente*/
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif; /*se aplica la fuente arial, si no esta la fuente arial, se aplica 
+    la que esta a su derecha y asi*/
+    font-style: italic; /*estilo de la fuente*/
+}
+
+h3{
+    font-family: "Comic Sans MS";
+    font-size: 25px; /*1em = 16px*/
+    font-weight: lighter;
+}
+
+p{
+    font-family: sans-serif; /*tipo de fuente*/
+    font-size: 18px;  /*tamaño de fuente*/
+    font-weight: bold; /*grosor*/
+}
+
+#parrafo{
+    font-family: "mansalva"; /*fuente personalizada extraida de google-fonts*/
+}
+
+#parrafo2{
+    font-family: weaBacan;
+}
+
+/*Colores del sistema*/
+/*"css colors default" en google te da toos los colores del sistema css*/
+
+/*Colores hexadecimales*/
+/*Notacion: #ffffff*/
+
+/*Colores rgb*/
+/*notacion: rgb(rojo, verde, azul)*/
+/*los grados del rojo, verde y azul varian desde el 0 al 255 y su mezcla es el color final*/
+
+/*Colores rgba*/
+/*notacion: rgba(rojo, verde, azul, opacidad)*/
+/*la opacidad va desde el 0 al 1, donde 1 es opaco y el negro es transparente*/
+
+/*puedes usar el color picker de google para buscar un color y sus notaciones*/
+/*y si quieres copiar un color, descarga PicPick. Es una herramienta muy util para diseño y muy livana*/

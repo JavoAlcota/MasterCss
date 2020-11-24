@@ -1,0 +1,20 @@
+en css la especifidad es prioritaria, es decir, si pones la misma propiedad para un elemento pero con distinto valor
+en distintos llamados, se aplicará el valor con el llamado más específico. Por ejemplo, si tenemos un h1 dentro de un div
+<div>
+  <h1>Soy un h1</h1>
+</div>
+
+y tenemos un archivo css con las siguientes estilos:
+
+h1{
+  background: green;
+}
+div h1{
+  background: red;
+}
+
+como el div h1 es más específico que el h1, el h1 tomará el color red (rojo)
+
+
+los estilos se aplican de arriba hacia abajo, es decir, se aplica elemento por elemento de arriba hacia abajo
+

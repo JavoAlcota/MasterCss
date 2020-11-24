@@ -1,0 +1,106 @@
+*{ /*eliminar el margen y el padding de todos los elementos*/
+    margin: 0px;  /*margen normal */
+    padding: 0px;  /*margen interior*/
+}
+
+.caja, .caja1{
+    width: 250px;  /*ancho*/
+    height: 250px;  /*altura*/
+    background-color: lightblue;
+    border: 10px solid red; /*borde de la caja (ancho, tipo y color)*/
+    margin: 15px 15px 15px 15px; /*separacion (top, right, buttom, left)*/
+    padding: 20px;
+    padding-bottom: 34px;
+    float: left; /*se ponen las cajas una al lado de otra, solo a elementos que tengan display block*/
+    display: block;
+    /*tipos de display
+    display: none;    oculta el elemento
+    display: block;   el elemento actua como una caja
+    display inline;   para objetos que no son para moverlos, es decir, no son flotables.
+    */
+    box-shadow: 5px 5px 5px black;  /*sombra a caja (box-shadow: ejex ejey difuminado color)*/
+    border-radius: 20px; /*redondear todas las esquinas.
+    Tambien puedes usar
+    border-radius: superiorIzquierda superiorDerecha inferiorDerecha inferiorIzquierda;
+    */
+    overflow: scroll; /*para añadir un scroll a una caja con un contenido que se sale o no salga completo.
+    Para solo añadir un scroll vertical hay que usar la propiedad "overflow-y"*/
+    position: relative; /*posicion por defecto*/
+}
+
+.caja1{
+    position: fixed; /*el elemento se queda totalmente fijo. Al hacer scroll, este se mueve junto con el scroll*/
+}
+
+#cajas{
+    max-width: 1035px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 8px black; /*sombra a caja*/
+}
+
+.caja p{
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    font-family: arial;
+    line-height: 230px;
+}
+
+body{
+    padding: 40px;
+}
+
+.clearfix{
+    float: none;
+    clear: both; /*limpia todos los flotados, para que los elementos bajo los elementos flotados no se adapten
+    a los elementos flotados*/
+}
+
+h1{
+    text-shadow: 3px 3px 5px black; /*sombra a texto*/
+}
+
+#libre, #libre2{
+    border: 1px solid black;
+    background-color: red;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 13px;
+    position: absolute;
+    top: 300px; /*puede posicionarse donde sea*/
+    right: 40%;
+}
+
+#libre{
+    z-index: 1; /*al final del css esta la definicion de esta propiedad*/
+}
+
+#libre2{
+    top: 280px;
+    background-color: green;
+    z-index: 2;
+}
+
+#fija{
+    position: fixed;
+    /* right: 50%;
+    left: 0px; */
+    border: 1px solid black;
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    font-size: 13px;
+
+}
+
+/*Overflow es una propiedad para controlar lo que se queda tanto dentro como fuera de una caja
+
+
+Position es una propiedad para definir la posicion de los elementos. Por defecto todos tienen poisicion relativa, es decir, su posicion
+dependerá de los demás elementos. La posicion absoluta hace que el elemento se pueda posicionar en cualquier lugar sin importar los 
+elementos que se encuentren y sin afectar a los demas elementos
+
+z-index es una propiedad para controlar qué elemtnos estará sobre otro elemento. Si hay dos elementos que esta superpuestos uno sobre
+otro, a los dos debes ponerle la propiedad z-index e indicarles un numero. El elemento con el numero mas alto, será el elemento que
+estará encima.*/

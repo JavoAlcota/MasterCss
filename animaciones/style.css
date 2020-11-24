@@ -1,0 +1,19 @@
+#enlace{
+    display: block;
+    padding: 20px;
+    background-color: green;
+    color: white;
+    width: 200px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid black;
+    transition:  border 0.25s, background 600ms, border-radius 150ms;
+}
+
+#enlace:hover{
+    border-radius: 15px;
+    background-color: brown;
+    border: 5px solid red;
+}
